@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Document
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet")
+    link( rel="stylesheet" href="./css/main.min.css")
+  body
+    include ./pug/svg.pug
+    header.header 
+      img(src="./img/logo.png" alt="Logo" class='header__logo')
+      nav.nav
+        ul.header__list
+          li.header__list-item
+            a(href="/#") Home
+          li.header__list-item
+            a(href="/#") Product
+          li.header__list-item
+            a(href="/#") About
+          li.header__list-item
+            a(href="/#") Contact
+      button.header__signup-button Sign up
+    //- main
+    main.main  
+      //- intro
+      section.intro
+        h1.intro__title Find the Best Solution in Seconds
+        p.intro__subtitle If debugging is the process of removing software bugs.
+        .intro__buttons
+          button.intro__buttons-start get start 
+          button.intro__buttons-free try for free 
+        img(src="./img/screen.png" alt="intro img" class='intro__img')
+      //- /intro
+      //- features
+      section.features
+        h2.features__title FigmaLand was Built Specifically for You
+        ul.features__list
+          li.list__item
+            i
+              svg
+                use(xlink:href='#feature1')
+            h3.list__item-title Management
+            p.list__item-text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+            a(href="/#" class='list__item-link') Learn More
+          li.list__item
+            i
+              svg
+                use(xlink:href='#feature2')
+            h3.list__item-title Customer Support
+            p.list__item-text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+            a(href="/#" class='list__item-link') Learn More
+          li.list__item
+            i
+              svg
+                use(xlink:href='#feature3')
+            h3.list__item-title Collaborative
+            p.list__item-text Slate helps you see how many more days you need to work to reach your financial goal for the month and year.
+            a(href="/#" class='list__item-link') Learn More
+      //- /features
+      //- advantages
+      section.advantages
+        ul.advantages__list
+          li.list__item
+            .list__item-description
+              h2.list__item-title Quick &amp; Easy Process
+              p.list__item-text Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan  their schedule.
+              .list__item-buttons
+                button.list__item-free sign up for free 
+                button.list__item-more find out more
+            img(src="/img/advantages/1.png" alt="advantages picture")
+          li.list__item
+            img(src="/img/advantages/2.png" alt="advantages picture")
+            .list__item-description
+              h2.list__item-title Perfect for Operations HR and Finance
+              p.list__item-text Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan  their schedule.
+              .list__item-buttons
+                button.list__item-btn Button 
+          li.list__item
+            .list__item-description
+              h2.list__item-title Perfect solution for small businesse
+              p.list__item-text Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business less stressful. We'd love to show you what we're building...
+              .list__item-buttons
+                button.list__item-free sign up for free 
+                button.list__item-more find out more
+            img(src="/img/advantages/3.png" alt="advantages picture")
+      //- /advantages
+      //- pricing
+      section.pricing
+        h2.pricing__title Simple Pricing for Your Team
+        p.pricing__subtitle Slate helps you see how many more days you need 
+        ul.pricing__list
+          //- first item
+          li.list__item
+            h3.list__item-title Education
+            p.list__item-subtitle Brief price Description
+            img(src="/img/pricing/1.png" alt="Education")
+            .list__item-price 0
+              .list__item-period $
+                span Per/month
+            ul.list__item-description
+              li Only 2 Operators
+              li Abandoned Cart
+              li Facebook &amp; Instagram Ads
+              li 
+                span Order Notifications
+              li
+                span Landing Pages
+            button.list__item-button Order Now
+          //- second item
+          li.list__item
+            h3.list__item-title Professional
+            p.list__item-subtitle Brief price Description
+            img(src="/img/pricing/2.png" alt="Professional")
+            .list__item-price 10
+              .list__item-period $
+                span Per/month
+            ul.list__item-description
+              li Only 2 Operators
+              li Abandoned Cart
+              li Facebook &amp; Instagram Ads
+              li Order Notifications
+              li
+                span Landing Pages
+            button.list__item-button Order Now
+          //- third item
+          li.list__item
+            h3.list__item-title Business
+            p.list__item-subtitle Brief price Description
+            img(src="/img/pricing/3.png" alt="Business")
+            .list__item-price 99
+              .list__item-period $
+                span Per/month
+            ul.list__item-description
+              li Only 2 Operators
+              li Abandoned Cart
+              li Facebook &amp; Instagram Ads
+              li Order Notifications
+              li Landing Pages
+            button.list__item-button Order Now
+      //- /pricing
+      //- newsletter
+      section.newsletter
+        h2.newsletter__title SUBSCRIBE
+        p.newsletter__subtitle Subscribe to get exclusive news &amp; offer
+        form.newsletter__form
+          input(class='newsletter__form-input' type="email" placeholder='Enter Your Email Address')
+          button.newsletter__form-button SUBSCIBE
+      //- /newsletter
+    //- footer
+    footer.footer
+      .footer__inner
+        .footer__inner-wrapper
+          nav.footer__inner-nav
+            ul.footer__list
+              li
+                a(href="/#") Price Item One
+              li
+                a(href="/#") Price Item Two
+              li
+                a(href="/#") Price Item Three
+            ul.footer__list
+              li
+                a(href="/#") Price Item One
+              li
+                a(href="/#") Price Item Two
+              li
+                a(href="/#") Price Item Three
+          p.footer__text Just type what's on your mind 
+        img(src="/img/footer/map.png", alt="Map" class='footer__map')
+        .footer__contact
+          ul.footer__contact-list
+            li
+              svg
+                use(xlink:href='#address')
+              a(href="/#") 7480 Mockingbird Hill undefined 
+            li
+              svg
+                use(xlink:href='#phone')
+              a(href="tel:(239) 555-0108") (239) 555-0108
+          .footer__social-network
+            a(href="/#")
+              svg
+                use(xlink:href='#twitter')
+            a(href="/#")
+              svg
+                use(xlink:href='#facebook')
+            a(href="/#")
+              svg
+                use(xlink:href='#linkedin')
+          
+
+    //- /footer
+    
